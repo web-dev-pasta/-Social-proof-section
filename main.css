@@ -21,11 +21,9 @@ body {
   align-items: center;
 }
 .card {
-  max-width: 1300px;
+  max-width: 1180px;
   width: 100%;
-  margin: 0 15px;
-  padding: 0px 60px;
-  padding-top: 60px;
+  margin: 100px 15px;
 }
 .card .text {
   display: flex;
@@ -123,20 +121,17 @@ body {
 .users .box:nth-child(2) {
   bottom: 15px;
 }
-@media (max-width: 1240px) {
+@media (max-width: 1020px) {
   .users .box:nth-child(1),
   .users .box:nth-child(2) {
     bottom: 0;
   }
+}
+@media (max-width: 991px) {
   .card {
     margin: 100px 15px;
     padding: 0;
   }
-  .card .text .second {
-    top: 0;
-  }
-}
-@media (max-width: 991px) {
   .card .text {
     flex-direction: column;
     align-items: center;
@@ -154,6 +149,7 @@ body {
   }
   .card .text .second {
     width: 100%;
+    top: 0;
   }
   .card .text .second .box {
     flex-direction: column;
