@@ -19,6 +19,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
 }
 .card {
   max-width: 1180px;
@@ -167,5 +171,11 @@ body {
   }
   .card .users {
     gap: 20px;
+  }
+}
+@media (max-width: 585px) {
+  body {
+    background-image: url(images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
   }
 }
